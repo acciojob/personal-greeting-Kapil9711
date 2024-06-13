@@ -5,12 +5,11 @@ const App = () => {
   const [inputValue, setInputValue] = React.useState("");
   return (
     <div>
-      <label htmlFor="name">Enter your name:</label>
+      <p>Enter your name:</p>
       <br />
       <br />
       <input
         type="text"
-        id="name"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
