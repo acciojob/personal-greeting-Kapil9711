@@ -5,17 +5,18 @@ const App = () => {
   const [inputValue, setInputValue] = React.useState("");
   return (
     <div>
-      <p>Enter your name:</p>
+      <label htmlFor="name">Enter your name:</label>
       <br />
       <br />
       <input
         type="text"
+        id="name"
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
       <br />
       <br />
-      {inputValue.length > 0 && <p>Hello {inputValue}!</p>}
+      <p>{inputValue.length > 0 && `Hello ${inputValue}!`}</p>
     </div>
   );
 };
